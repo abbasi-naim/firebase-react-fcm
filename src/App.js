@@ -9,6 +9,17 @@ class App extends Component {
 
   componentDidMount() {
     const messaging = firebase.messaging();
+    messaging
+      .requestPermission()
+      .then(() => {
+        return messaging.getToken();
+      })
+      .then((token) => {
+        console.log("Token : ", token);
+      })
+      .catch(() => {
+        console.log("Error");
+      });
   }
   render() {
     return <div></div>;
