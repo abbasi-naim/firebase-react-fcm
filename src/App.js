@@ -1,25 +1,18 @@
-import React, { Component } from 'react';
-import firebase from './firebase';
+import React, { Component } from "react";
+import firebase from "./firebase";
 
 class App extends Component {
-    constructor(props) {
-        super(props)
-        this.state = {
+  constructor(props) {
+    super(props);
+    this.state = {};
+  }
 
-        }
-
-    }
-
-    componentDidMount() {
-
-    }
-    render() {
-        return (
-            <div>
-
-            </div>
-        );
-    }
+  componentDidMount() {
+    const messaging = firebase.messaging();
+  }
+  render() {
+    return <div></div>;
+  }
 }
 
 export default App;
