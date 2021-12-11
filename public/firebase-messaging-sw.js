@@ -8,3 +8,5 @@ importScripts(
 firebase.initializeApp({
   messagingSenderId: "766739444064",
 });
+
+const initMessaging = firebase.messaging()
