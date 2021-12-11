@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import firebase from './firebase';
 
 class App extends Component {
     constructor(props) {
@@ -10,7 +11,7 @@ class App extends Component {
     }
 
     componentDidMount() {
-        
+
     }
     render() {
         return (
