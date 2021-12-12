@@ -5,7 +5,19 @@ h2 {
   text-align: center;
   color: red;
 }
+img {
+  width: 600px;
+  height: 300px;
+  display: block;
+  margin: 0 auto;
+}
 
+a {
+  display: block;
+  width: 113px;
+  margin: auto;
+  color: #61dafb;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
