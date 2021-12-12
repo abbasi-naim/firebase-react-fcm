@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import firebase from "./firebase";
+import "./App.css";
 
 export default class App extends Component {
   constructor(props) {
@@ -22,6 +23,6 @@ export default class App extends Component {
       });
   }
   render() {
-    return <div>this is my first fcm notification.</div>;
+    return <h2>This is my first fcm notification</h2>;
   }
 }
