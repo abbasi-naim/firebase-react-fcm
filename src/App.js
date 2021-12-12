@@ -15,13 +15,13 @@ export default class App extends Component {
         return messaging.getToken();
       })
       .then((token) => {
-        console.log("Token : ", token);
+        console.warn("Token : ", token);
       })
       .catch(() => {
         console.log("Error");
       });
   }
   render() {
-    return <div></div>;
+    return <div>this is my first fcm notification.</div>;
   }
 }
