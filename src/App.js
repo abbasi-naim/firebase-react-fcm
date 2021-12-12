@@ -15,7 +15,7 @@ export default class App extends Component {
         return messaging.getToken();
       })
       .then((token) => {
-        console.log("Token : ", token);
+        if (token) console.log("Token : ", token);
       })
       .catch(() => {
         console.log("Error");
